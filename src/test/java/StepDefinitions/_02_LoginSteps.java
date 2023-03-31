@@ -29,10 +29,10 @@ public class _02_LoginSteps {
         dc.verifyContainsTextFunction(dc.dogrulama2, "Welcome");
     }
 
-    @And("logout olunuz")
-    public void logoutOlunuz() {
-        dc.clickFunction(dc.logoutButton);
-    }
+//    @And("logout olunuz")
+//    public void logoutOlunuz() {
+//        dc.clickFunction(dc.logoutButton);
+//    }
 
     @When("gecersiz kullanici adi {string} ve password {string} ile login olunuz")
     public void gecersizKullaniciAdiVePasswordIleLoginOlunuz(String name, String code) {

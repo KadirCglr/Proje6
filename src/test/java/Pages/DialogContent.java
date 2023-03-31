@@ -72,8 +72,8 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//b[text()='Welcome']")
     public WebElement dogrulama2;
 
-    @FindBy(xpath = "//a[text()='Log Out']")
-    public WebElement logoutButton;
+//    @FindBy(xpath = "//a[text()='Log Out']")
+//    public WebElement logoutButton;
 
     @FindBy(xpath = "//h1[@class='title']")
     public WebElement dogrulama3;
@@ -81,8 +81,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//a[text()='Bill Pay']")
     public WebElement billPayButton;
 
-
-    @FindBy(name = "payee.name")
+    @FindBy(xpath = "//input[@name='payee.name']")
     public WebElement payeeName;
 
     @FindBy(name = "payee.address.street")
@@ -113,8 +112,16 @@ public class DialogContent extends Parent {
     @FindBy(name = "amount")
     public WebElement amount;
 
-    @FindBy(xpath = "//input[@type='submit'")
+    @FindBy(xpath = "//input[@value='Send Payment']")
     public WebElement sendPayment;
+
+    @FindBy(xpath = "//*[text()='Bill Payment Complete']")
+    public WebElement dogrulama4;
+
+
+
+
+
 
 
 
